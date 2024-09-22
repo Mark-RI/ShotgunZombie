@@ -1,0 +1,159 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+    }
+
+     @import url(https://fonts.googleapis.com/css?family=Audiowide);
+    
+    body {
+      margin: 0;
+      background-color: #626567;
+    }
+    .container {
+      height: 100vh;
+      background: #626567; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .loading {
+      display: flex;
+      flex-direction: row;
+    }
+    .loading__letter {
+      font-size: 88px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-family: "Audiowide";
+      color: #fec468;
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    
+    .loading__letter:nth-child(2) {
+      animation-delay: .1s; 
+    }
+    .loading__letter:nth-child(3) {
+      animation-delay: .2s;
+    }
+    .loading__letter:nth-child(4) {
+      animation-delay: .3s; 
+    }
+    .loading__letter:nth-child(5) {
+      animation-delay: .4s;
+    }
+    .loading__letter:nth-child(6) {
+      animation-delay: .5s; 
+    }
+    .loading__letter:nth-child(7) {
+      animation-delay: .6s;
+    }
+    .loading__letter:nth-child(8) {
+      animation-delay: .8s;
+    }
+    .loading__letter:nth-child(9) {
+      animation-delay: 1s;
+    }
+    .loading__letter:nth-child(10) {
+      animation-delay: 1.2s;
+    }
+    .loading__letter:nth-child(11) {
+      animation-delay: 1.4s; 
+    }
+    .loading__letter:nth-child(12) {
+      animation-delay: 1.6s;
+    }
+    .loading__letter:nth-child(13) {
+      animation-delay: 1.8s;
+    }
+    .loading__letter:nth-child(14) {
+      animation-delay: 2s;
+    }
+    .loading__letter:nth-child(15) {
+      animation-delay: 2.2s;
+    }
+    
+    @keyframes bounce {
+      0% {
+        transform: translateY(0px)
+      }
+      40% {
+        transform: translateY(-40px);
+      }
+      80%,
+      100% {
+        transform: translateY(0px);
+      }
+    }
+    
+    
+    @media (max-width: 700px) {
+      .loading__letter {
+        font-size: 50px;
+      }
+    }
+    
+    @media (max-width: 340px) {
+      .loading__letter {
+        font-size: 40px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+    <div id="p5_loading" class="container">
+      <div class="loading">
+        <div class="loading__letter">M</div>
+        <div class="loading__letter">A</div>
+        <div class="loading__letter">D</div>
+        <div class="loading__letter">R</div>
+        <div class="loading__letter">E</div>
+        <div class="loading__letter">V</div>
+        <div class="loading__letter">I</div>
+        <div class="loading__letter">S</div>
+        <div class="loading__letter">I</div>
+        <div class="loading__letter">O</div>
+        <div class="loading__letter">N</div>
+        <div class="loading__letter">.</div>
+        <div class="loading__letter">C</div>
+        <div class="loading__letter">O</div>
+        <div class="loading__letter">M</div>
+      </div>
+    </div>
+    
+<!--    <div id="p5_loading" class="loadingclass">MADREVISION.COM</div> -->
+    
+    <script src="sketch.js"></script>
+    <script src="shotgun.js"></script>
+    <script src="deserteagle.js"></script>
+    <script src="character.js"></script>
+    <script src="bullets.js"></script>
+    <script src="rifle.js"></script>
+    <script src="balloon.js"></script>
+    <script src="p5collide2d.js"></script>
+    <script src="barrier.js"></script>
+    <script src="placedBarrier.js"></script>
+    <script src="turret.js"></script>
+    <script src="placedTurret.js"></script>
+    <script src="granade.js"></script>
+    <script src="thrownGranade.js"></script>
+    <script src="barrel.js"></script>
+    <script src="placedBarrel.js"></script>
+    <script src="floatText.js"></script>
+    <script src="displayZombie.js"></script>
+    </center>
+</body></html>
